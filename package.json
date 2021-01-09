@@ -1,0 +1,29 @@
+{
+  "name": "node_and_c-",
+  "version": "1.0.0",
+  "description": "A simple template for integrating c++ code in nodejs",
+  "main": "script.js",
+  "scripts": {
+    "build_addons": "node-gyp configure build",
+    "install_modules": "concurrently \"npm install && npm run build_addons\"",
+    "start": "node script",
+    "start_dev": "concurrently \"npm run install_modules && npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasham7861/node_and_c-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/hasham7861/node_and_c-/issues"
+  },
+  "homepage": "https://github.com/hasham7861/node_and_c-#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^7.1.2"
+  }
+}
