@@ -1,4 +1,4 @@
-# node_and_c-
+# node_and_cpp
 A simple template for integrating c++ code in nodejs
 
 # technical 
